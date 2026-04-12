@@ -63,17 +63,3 @@
       return winningCombos.some(combo => {
         return combo.every(index => cells[index] === currentPlayer);
       });
-    }
-
-    function resetGame() {
-      cells = ["", "", "", "", "", "", "", "", ""];
-      currentPlayer = "X";
-      gameActive = true;
-      status.textContent = "Player X's turn";
-      createBoard();
-    }
-
-    createBoard();
-  </script>
-</body>
-</html>
